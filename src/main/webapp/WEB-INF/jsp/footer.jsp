@@ -1,16 +1,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-        <div class="content_foot">Social Footer</div>
+        <div class="content_foot">
         <div class="footer">
-            <div class="social">&#62220;</div>
-            <div class="social">&#62217;</div>
-            <div class="social">&#62223;</div>
-            <div class="social">&#62232;</div>
-            <div class="social">&#62235;</div>
-            <div class="social">&#62226;</div>
-            <div class="social">&#62214;</div>
+            <div class="social"><i class="fa fa-facebook-square"></i></div>
+            <div class="social"><i class="fa fa-wikipedia-w"></i></div>
+            <div class="social"><i class="fa fa-twitter"></i></div>
+            <div class="social"><i class="fa fa-instagram"></i></div>
         </div>
+            </div>
       </section>
     </body>
 </html>

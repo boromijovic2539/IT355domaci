@@ -1,3 +1,6 @@
-C:\Users\vesna.lazarevic\Documents\NetBeansProjects\mavenproject1\PrviDomaci\src\main\java\com\mycompany\prvidomaci\CarskiController.java
-C:\Users\vesna.lazarevic\Documents\NetBeansProjects\mavenproject1\PrviDomaci\src\main\java\com\mycompany\prvidomaci\SobaController.java
-C:\Users\vesna.lazarevic\Documents\NetBeansProjects\mavenproject1\PrviDomaci\src\main\java\com\mycompany\model\Soba.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\controller\CarskiController.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\aspect\InterceptorLog.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\model\Soba.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\controller\SobaController.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\dao\SobaDao.java
+C:\Users\vesna.lazarevic\Documents\NetBeansProjects\IT355Domaci\src\main\java\com\mycompany\dao\SobaDaoImp.java

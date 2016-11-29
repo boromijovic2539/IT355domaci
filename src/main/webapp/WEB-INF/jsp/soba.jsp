@@ -3,6 +3,9 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@include file="header.jsp" %>
 <h2>Unesite informacije o sobi</h2>
 <form:form method="POST" action="/PrviDomaci/addSoba" commandName="soba">
     <table>
@@ -40,3 +43,4 @@
         </tr>
     </table>
 </form:form>
+<%@include file="footer.jsp" %>
