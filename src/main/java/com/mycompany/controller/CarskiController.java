@@ -9,19 +9,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
  * @author Mijovic
  */
 @Controller
-@RequestMapping("/")
 public class CarskiController {
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String printHello(ModelMap model) {
-        model.addAttribute("poruka", "Dobro došli u prvi Carski Domaci!");
-        
-        return "domaci";
+    @RequestMapping(value = {"/"}, method = RequestMethod.GET)
+    public ModelAndView HomePage() {
+        ModelAndView model = new ModelAndView();
+      //  model.addObject("message", "DOBRODOSLI!");
+        model.setViewName("home");
+        return model;
+    }
+    
+    @RequestMapping(value = {"/history"}, method = RequestMethod.GET)
+    public ModelAndView HistoryPage() {
+        ModelAndView model = new ModelAndView();
+      //  model.addObject("message", "DOBRODOSLI!");
+        model.setViewName("history");
+        return model;
     }
 }

@@ -4,56 +4,51 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <head>
+        <link rel="shortcut icon" href="http://www.futhead.com/static//img/14/clubs/1887.png"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"/>
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="<c:url value="/resources/stylequery.js" />"></script>
+        <link href="<c:url value="/resources/headerStyle.css" />" rel="stylesheet"  type="text/css" />
         <link href="<c:url value="/resources/style.css" />" rel="stylesheet"  type="text/css" />
+        <link href="<c:url value="/resources/backgroundStyle.css" />" rel="stylesheet"  type="text/css" />
     </head>
-    <title>Nasa prva fensi Spring aplikacija</title>
-</head>
-<body>
-    <header>
-        <div class="header-banner">
-            <a href="/" class="logo"></a>
+    
+    <title>Vitoria F.A.M</title>
 
-            <h1>FootManager</h1>
+    <body>
+        <div class = "header">
+            <div class="header-banner">
+                <a href="#" class="logo"><img src="http://www.futhead.com/static//img/14/clubs/1887.png" style="width: auto; height: auto;max-width: 100px;max-height: 100px"></a>
 
-        </div>
-        <%-- 
-      <div class="clear"></div>
-
-     <nav>
-            <ul>
-                <li><a href="/PrviDomaci/soba">Club</a></li>
-                <li><a href="/PrviDomaci/soba">Cards</a></li>
-                <li><a href="/PrviDomaci">Sponsors</a></li>
-                <li><a href="/events">News</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <ul>
-                    </nav--%>
-
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Barnsley</a>
+                <h1>Vitoria F.A.M</h1>
+                <div class="userAut">
+                <sec:authorize access="hasRole('ROLE_USER')">
+                    <c:url value="/j_spring_security_logout" var="logoutUrl" />
+                    <form action="${logoutUrl}" method="post" id="logoutForm">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                    </form>
+                    <script>
+                        function formSubmit() {
+                            document.getElementById("logoutForm").submit();
+                        }
+                    </script>
+                    <c:if test="${pageContext.request.userPrincipal.name != null}">
+                        <p style="color: white;"> Vase korisnicko ime je :
+                            ${pageContext.request.userPrincipal.name} | <a href="javascript:formSubmit()">Logout</a>
+                        
+                    </c:if>
+                </sec:authorize>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/PrviDomaci">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Club
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/PrviDomaci/soba">About club</a></li>
-                            <li><a href="#">Selection</a></li>
-                            <li><a href="#">Menagemant</a></li> 
-                        </ul>
-                    </li>
-                    <li><a href="#">News</a></li> 
-                    <li><a href="#">Contact</a></li> 
-                </ul>
             </div>
-        </nav>
-    </header>
-    <section class="content">
+            <nav>
+                <ul>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="#club">Club</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
