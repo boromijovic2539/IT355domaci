@@ -46,6 +46,7 @@
                     <li><a class="active" href="">Home</a></li>
                     <li><a href="#club">Club</a></li>
                     <li><a href="#news">News</a></li>
+                    <li><a href="#news">Tickets</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="login">Login</a></li>
                 </ul>

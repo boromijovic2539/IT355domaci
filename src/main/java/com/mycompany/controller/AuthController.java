@@ -29,6 +29,13 @@ public class AuthController {
         model.setViewName("hello");
         return model;
     }
+    
+    @RequestMapping(value = {"/tickets"}, method = RequestMethod.GET)
+    public ModelAndView ticketsPage() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("tickets");
+        return model;
+    }
 
     @RequestMapping(value = "/admin**", method
             = RequestMethod.GET)
@@ -51,6 +58,13 @@ public class AuthController {
             model.addObject("msg", "Izlogovani ste.");
         }
         model.setViewName("login");
+        return model;
+    }
+    
+    @RequestMapping(value = {"/register"}, method = RequestMethod.GET)
+    public ModelAndView registerPage() {
+        ModelAndView model = new ModelAndView();
+        model.setViewName("register");
         return model;
     }
 

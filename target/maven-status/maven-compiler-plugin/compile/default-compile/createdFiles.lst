@@ -1,7 +1,10 @@
 com\mycompany\controller\AuthController.class
 com\mycompany\dao\SobaDao.class
 com\mycompany\model\Soba.class
+com\mycompany\controller\RegController.class
 com\mycompany\dao\SobaDaoImp.class
+com\mycompany\flow\LoginBean.class
 com\mycompany\aspect\InterceptorLog.class
 com\mycompany\controller\CarskiController.class
 com\mycompany\controller\SobaController.class
+com\mycompany\flow\LoginService.class

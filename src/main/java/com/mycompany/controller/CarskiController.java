@@ -33,4 +33,12 @@ public class CarskiController {
         model.setViewName("history");
         return model;
     }
+    
+    @RequestMapping(value = {"/headLogin"}, method = RequestMethod.GET)
+    public ModelAndView HeadLogin() {
+        ModelAndView model = new ModelAndView();
+      //  model.addObject("message", "DOBRODOSLI!");
+        model.setViewName("headLogin");
+        return model;
+    }
 }

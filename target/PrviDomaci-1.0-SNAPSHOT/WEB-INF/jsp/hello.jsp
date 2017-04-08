@@ -5,7 +5,7 @@
 
 <html>
         <%@include file="header.jsp" %>
-        <p>Zdravo, korisnice!
+        <p style=" color: white; ">Zdravo, korisnice!
         <h1> ${message}</h1>
     
  <%@include file="footer.jsp" %>
