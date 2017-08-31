@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class CarskiController {
-
+     
     @RequestMapping(value = {"/"}, method = RequestMethod.GET)
     public ModelAndView HomePage() {
         ModelAndView model = new ModelAndView();

@@ -1,6 +1,7 @@
 package com.mycompany.controller;
 
 import com.mycompany.dao.SobaDao;
+import com.mycompany.dao.SobaDaoImp;
 import com.mycompany.model.Soba;
 import java.util.Locale;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class SobaController {
 
     @Autowired
-    private SobaDao sobaDao;
+    private SobaDao sobaDao; 
 
     @RequestMapping(value = "/soba", method
             = RequestMethod.GET)
@@ -41,7 +42,6 @@ public class SobaController {
         model.addAttribute("cenaPoDanu", soba.getCenaPoDanu());
         
         sobaDao.addSoba();
-
         
         return "prikaz";
     }

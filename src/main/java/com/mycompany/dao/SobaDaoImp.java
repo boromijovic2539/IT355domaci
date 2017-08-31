@@ -9,8 +9,8 @@ package com.mycompany.dao;
  *
  * @author vesna.lazarevic
  */
-public class SobaDaoImp implements SobaDao{
-
+public class SobaDaoImp implements SobaDao{    
+    
     @Override
     public void addSoba() {
         System.out.println("Dodajem novu sobu!");
